@@ -9,6 +9,10 @@ class App extends Component {
     this.props.store.dispatch(addItem());
   }
 
+  handleOClick = event => {
+    this.props.addItem()
+  }
+
   render() {
     return (
       <div className="App">
